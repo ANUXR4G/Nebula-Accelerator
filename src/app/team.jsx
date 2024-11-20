@@ -17,11 +17,11 @@ const ImageCard = ({ name, designation, description, imageSrc }) => {
                 className="w-48 h-48 object-cover bg-gray-300" // Set height to width for square
             />
             {isHovered && (
-                <div className="absolute top-0 left-0 right-0 bg-white p-4 shadow-lg rounded-lg transition-transform transform translate-y-2 group-hover:translate-y-0">
+                <div className="absolute top-0 left-0 2xl:top-48 2xl:left-48 right-0 w-2/3 bg-white p-4 shadow-lg rounded-lg transition-transform transform translate-y-2 group-hover:translate-y-0 z-10">
                     <div className="flex items-center">
                         <img src={imageSrc} alt={name} className="w-16 h-16 rounded-full mr-2" />
                         <div>
-                            <h3 className="text-lg font-bold">{name}</h3>
+                            <h3 className="text-lg font-bold text-[#2baee2]">{name}</h3>
                             <p className="text-sm text-gray-500">{designation}</p>
                             <p className="text-xs text-gray-400">{description}</p>
                         </div>

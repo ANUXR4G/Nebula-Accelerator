@@ -7,7 +7,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 
 const UserIcon = () => (
   <div className="flex items-end justify-end rounded-full">
-    <FaRegUserCircle className="text-[#000000] h-10 w-10" />
+    <FaRegUserCircle className="text-black h-10 w-10" />
   </div>
 );
 
