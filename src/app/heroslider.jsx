@@ -30,24 +30,22 @@ const Heroslider = () => {
   }, []);
 
   return (
-    <div>
-      <div className="flex flex-row items-center justify-center h-full bg-white mt-10">
-        <h1 className="text-black font-black text-center  text-lg md:text-[60px] text-nowrap leading-none tracking-tighter">
+    <div className="p-10">
+      <div className="flex flex-col sm:flex-row items-center justify-center bg-white mb-10">
+        <h1 className="text-black font-black text-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-none tracking-tighter">
           ( NEBULA ACCELERATOR )
         </h1>
-        <p className="text-black text-sm md:text-2xl font-semibold mt-2">
-          EST. 2024
+        <p className="text-black text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-2 sm:mt-0 sm:ml-4">
+          EST.<br className="sm:hidden" /> 2024
         </p>
       </div>
-    <div className="relative w-screen h-screen mx-auto overflow-hidden">
-      <div
-        className="flex transition-transform duration-1000 ease-in-out h-full"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {slides.map((slide, index) => (
-          <div key={slide.id} className="relative min-w-full h-full">
-            {/* Background Image */}
-            <div className="absolute inset-0">
+      <div className="relative w-full h-[calc(100vh-12rem)] overflow-hidden">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out h-full"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {slides.map((slide, index) => (
+            <div key={slide.id} className="relative min-w-full h-full">
               <Image
                 src={slide.imgSrc}
                 alt={slide.title}
@@ -55,42 +53,29 @@ const Heroslider = () => {
                 objectFit="cover"
                 priority={index === 0}
               />
-              <div className="absolute inset-0 bg-black opacity-50"></div>
-            </div>
-            
-            {/* Centered Card */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-md">
-                <div className="relative w-full h-48 mb-4">
-                  <Image
-                    src={slide.imgSrc}
-                    alt={slide.title}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-md"
-                  />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div className="text-white text-center p-6">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-2">{slide.title}</h2>
+                  <p className="text-lg md:text-xl">{slide.description}</p>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-2">{slide.title}</h2>
-                <p className="text-gray-700">{slide.description}</p>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <button
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full text-3xl z-10"
-        onClick={goToPrevious}
-      >
-        &#10094;
-      </button>
-      <button
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full text-3xl z-10"
-        onClick={goToNext}
-      >
-        &#10095;
-      </button>
-    </div>
+        <button
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full text-3xl z-10 hover:bg-opacity-75"
+          onClick={goToPrevious}
+        >
+          &#10094;
+        </button>
+        <button
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full text-3xl z-10 hover:bg-opacity-75"
+          onClick={goToNext}
+        >
+          &#10095;
+        </button>
+      </div>
     </div>
   );
 };
