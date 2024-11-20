@@ -50,7 +50,7 @@ const Team = () => {
     return (
         <div className="bg-black text-white py-10 w-screen max-w-full">
         <div className="container mx-auto px-1">
-            <h1 className="text-center text-9xl sm:text-9xl font-black text-nowrap mb-12">STARS OF THE NEBULA</h1>
+            <h1 className="text-center text-9xl sm:text-9xl font-black tracking-tighter text-nowrap mb-12">STARS OF THE NEBULA</h1>
             <div className="flex flex-wrap justify-center -mx-4">
                 {data.map((member, index) => (
                     <ImageCard
