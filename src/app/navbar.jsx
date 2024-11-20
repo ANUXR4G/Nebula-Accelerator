@@ -3,6 +3,13 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/app/assets/nebula.jpg";
+import { FaRegUserCircle } from "react-icons/fa";
+
+const UserIcon = () => (
+  <div className="flex items-end justify-end rounded-full">
+    <FaRegUserCircle className="text-[#000000] h-10 w-10" />
+  </div>
+);
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,8 +22,8 @@ const Navbar = () => {
       </div>
 
       {/* Links for larger screens */}
-      <div className="hidden md:flex space-x-8 text-lg font-semibold flex-grow justify-evenly">
-      <Link href="/about" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
+      <div className="hidden md:flex space-x-8 text-lg font-semibold flex-grow justify-evenly items-center">
+        <Link href="/about" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
           HOME
         </Link>
         <Link href="/about" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
@@ -29,12 +36,16 @@ const Navbar = () => {
           WORK
         </Link>
         <Link href="/social" className="hover:text-black transition-colors duration-1000 text-xl text-white bg-[#2baee2]">
-         <span className="p-4">MEMBERSHIP</span> 
+          <span className="p-4">MEMBERSHIP</span> 
         </Link>
+        <UserIcon />
       </div>
 
-      {/* Mobile Menu Button */}
-      <div className="md:hidden">
+      {/* Mobile Menu Button and User Icon */}
+      <div className="md:hidden flex items-center space-x-4">
+        <div className="flex items-end justify-end w-10 h-10 bg-gray-200 rounded-full">
+          <FaRegUserCircle className="bg-[#2baee2]" />
+        </div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="flex flex-col items-center justify-center space-y-1"
@@ -51,7 +62,7 @@ const Navbar = () => {
         <div className="absolute h-full top-16 left-0 w-full bg-white mt-10 shadow-lg md:hidden z-50">
           <ul className="flex flex-col space-y-4 py-4 px-6 text-lg font-semibold text-left">
             <li>
-              <Link href="/about" className="block hover:underline  text-black py-10 text-2xl">
+              <Link href="/about" className="block hover:underline text-black py-10 text-2xl">
                 HOME
               </Link>
             </li>
