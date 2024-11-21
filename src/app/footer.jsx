@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-center mt-4">
-                <p className="text-sm">All rights reserved &copy; {new Date().getFullYear()}</p>
+                <p className="text-sm">&copy; Nebula Acceleration All rights reserved  {new Date().getFullYear()}.</p>
             </div>
         </footer>
     );
