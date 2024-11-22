@@ -18,7 +18,7 @@ const Whatwedo = () => {
     <section className="flex flex-col md:flex-row gap-6 p-6 bg-white font-sans">
       {/* Left Section */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-3xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
+        <h2 className="text-9xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
         <ul className="mt-4 space-y-4 text-gray-600 font-semibold cursor-pointer">
           {Object.keys(content).map((key) => (
             <li
