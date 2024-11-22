@@ -11,11 +11,17 @@ const ImageCard = ({ name, designation, description, imageSrc }) => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}>
             
-            <img
-                src={imageSrc}
-                alt={name}
-                className="w-48 h-48 object-cover bg-gray-300" // Set height to width for square
-            />
+            <div className="relative">
+                <img
+                    src={imageSrc}
+                    alt={name}
+                    className="w-48 h-48 object-cover bg-gray-300"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-2">
+                    <h3 className="text-sm font-bold">{name}</h3>
+                    <p className="text-xs">{designation}</p>
+                </div>
+            </div>
             {isHovered && (
                 <div className="absolute top-0 left-0 2xl:top-48 2xl:left-48 right-0 w-2/3 bg-white p-4 shadow-lg rounded-lg transition-transform transform translate-y-2 group-hover:translate-y-0 z-10">
                     <div className="flex items-center">
@@ -44,26 +50,25 @@ const Team = () => {
         { name: "Henry Wilson", designation: "Space Medicine Specialist", description: "Ensuring astronaut health", imageSrc: "https://via.placeholder.com/150" },
         { name: "Irene Garcia", designation: "Propulsion Engineer", description: "Developing advanced rocket engines", imageSrc: "https://via.placeholder.com/150" },
         { name: "Jack Taylor", designation: "Space Policy Analyst", description: "Shaping future space missions", imageSrc: "https://via.placeholder.com/150" },
-        { name: "Jack Taylor", designation: "Space Policy Analyst", description: "Shaping future space missions", imageSrc: "https://via.placeholder.com/150" },
     ];
 
     return (
         <div className="bg-black text-white py-10 w-screen max-w-full">
-        <div className="container mx-auto px-1">
-            <h1 className="text-center text-9xl sm:text-9xl font-black tracking-tighter text-nowrap mb-12">STARS OF THE NEBULA</h1>
-            <div className="flex flex-wrap justify-center -mx-4">
-                {data.map((member, index) => (
-                    <ImageCard
-                        key={index}
-                        name={member.name}
-                        designation={member.designation}
-                        description={member.description}
-                        imageSrc={member.imageSrc}
-                    />
-                ))}
+            <div className="container mx-auto px-1">
+                <h1 className="text-center text-9xl sm:text-9xl font-black tracking-tighter text-nowrap mb-12">STARS OF THE NEBULA</h1>
+                <div className="flex flex-wrap justify-center -mx-4">
+                    {data.map((member, index) => (
+                        <ImageCard
+                            key={index}
+                            name={member.name}
+                            designation={member.designation}
+                            description={member.description}
+                            imageSrc={member.imageSrc}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
-    </div>
     );
 };
 
