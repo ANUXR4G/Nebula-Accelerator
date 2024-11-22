@@ -7,7 +7,7 @@ const ImageCard = ({ name, designation, description, imageSrc }) => {
 
     return (
         <div
-            className="relative group m-4 cursor-pointer w-full sm:w-1/2 lg:w-1/5 "
+            className="relative group cursor-pointer"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}>
             
@@ -15,7 +15,7 @@ const ImageCard = ({ name, designation, description, imageSrc }) => {
                 <img
                     src={imageSrc}
                     alt={name}
-                    className="w-48 h-48 object-cover bg-gray-300"
+                    className="w-full h-48 object-cover bg-gray-300"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-2">
                     <h3 className="text-sm font-bold">{name}</h3>
@@ -23,7 +23,7 @@ const ImageCard = ({ name, designation, description, imageSrc }) => {
                 </div>
             </div>
             {isHovered && (
-                <div className="absolute top-0 left-0 2xl:top-48 2xl:left-48 right-0 w-2/3 bg-white p-4 shadow-lg rounded-lg transition-transform transform translate-y-2 group-hover:translate-y-0 z-10">
+                <div className="absolute top-full left-0 right-0 bg-white p-4 shadow-lg rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-10">
                     <div className="flex items-center">
                         <img src={imageSrc} alt={name} className="w-16 h-16 rounded-full mr-2" />
                         <div>
@@ -53,10 +53,10 @@ const Team = () => {
     ];
 
     return (
-        <div className="bg-black text-white py-10 w-screen max-w-full">
-            <div className="container mx-auto px-1">
-                <h1 className="text-center text-9xl sm:text-9xl font-black tracking-tighter text-nowrap mb-12">STARS OF THE NEBULA</h1>
-                <div className="flex flex-wrap justify-center -mx-4">
+        <div className="bg-black text-white py-10 w-screen max-w-full h-screen">
+            <div className="container mx-auto">
+                <h1 className="text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight mb-12">STARS OF THE NEBULA</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-36">
                     {data.map((member, index) => (
                         <ImageCard
                             key={index}

@@ -7,19 +7,19 @@ const Footer = () => {
                 <div>
                     <h2 className="text-lg font-bold mb-2">NEBULA</h2>
                     <ul className="space-y-1">
-                        <li><a href="#" className="hover:underline">About</a></li>
-                        <li><a href="#" className="hover:underline">Membership</a></li>
-                        <li><a href="#" className="hover:underline">Services</a></li>
-                        <li><a href="#" className="hover:underline">Work</a></li>
+                        <li><a href="#" className="hover:text-gray-400 transition-colors duration-1000">About</a></li>
+                        <li><a href="#" className="hover:text-gray-400 transition-colors duration-1000">Membership</a></li>
+                        <li><a href="#" className="hover:text-gray-400 transition-colors duration-1000">Services</a></li>
+                        <li><a href="#" className="hover:text-gray-400 transition-colors duration-1000">Work</a></li>
                     </ul>
                 </div>
                 <div className="mt-4 md:mt-0">
                     <h2 className="text-lg font-bold mb-2">Follow Us</h2>
                     <div className="flex space-x-4">
-                        <a href="#" className="hover:underline">Instagram</a>
-                        <a href="#" className="hover:underline">LinkedIn</a>
-                        <a href="#" className="hover:underline">X</a>
-                        <a href="#" className="hover:underline">Facebook</a>
+                        <a href="#" className="hover:text-gray-400 transition-colors duration-1000">Instagram</a>
+                        <a href="#" className="hover:text-gray-400 transition-colors duration-1000">LinkedIn</a>
+                        <a href="#" className="hover:text-gray-400 transition-colors duration-1000">X</a>
+                        <a href="#" className="hover:text-gray-400 transition-colors duration-1000">Facebook</a>
                     </div>
                 </div>
             </div>
