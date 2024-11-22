@@ -15,18 +15,18 @@ const Whatwedo = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row gap-6 p-6 bg-white font-sans">
+    <section className="flex flex-col md:flex-row gap-6 p-6 bg-white font-sans h-screen">
       {/* Left Section */}
       <div className="w-full md:w-1/2">
         <h2 className="text-9xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
-        <ul className="mt-4 space-y-4 text-gray-600 font-semibold cursor-pointer">
+        <ul className="mt-4 space-y-4 text-gray-100 font-bold cursor-pointer text-6xl py-5">
           {Object.keys(content).map((key) => (
             <li
               key={key}
-              className={`transition duration-300 ease-in-out ${
+              className={`transition duration-300 py-5 ease-in-out ${
                 activeContent === key 
-                  ? "text-blue-700 font-bold" 
-                  : "hover:text-blue-600"
+                  ? "text-black font-bold" 
+                  : "hover:text-black"
               }`}
               onClick={() => setActiveContent(key)}
             >
@@ -34,6 +34,7 @@ const Whatwedo = () => {
             </li>
           ))}
         </ul>
+        
       </div>
 
       {/* Right Section */}
