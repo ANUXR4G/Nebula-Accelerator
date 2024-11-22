@@ -19,7 +19,7 @@ const Whatwedo = () => {
       {/* Left Section */}
       <div className="w-full md:w-1/2">
         <h2 className="text-9xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
-        <ul className="mt-4 space-y-4 text-gray-100 font-bold cursor-pointer text-6xl py-5">
+        <ul className="mt-4 space-y-4 text-gray-100 font-bold cursor-pointer text-6xl">
           {Object.keys(content).map((key) => (
             <li
               key={key}
