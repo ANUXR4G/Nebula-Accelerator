@@ -32,7 +32,7 @@ const NewsForum = () => {
     return (
         <div className="bg-gray-100 py-12">
             <div className="container mx-auto text-center mb-8">
-                <h1 className="text-5xl font-bold">NEWS FORUM</h1>
+                <h1 className="text-5xl font-bold text-black">NEWS FORUM</h1>
                 <button className="mt-4 text-blue-500 underline">Show All</button>
             </div>
             <div className="flex overflow-x-auto py-4 scrollbar-hide">
@@ -43,7 +43,7 @@ const NewsForum = () => {
                             alt={article.title}
                             className="w-full h-48 object-cover rounded-lg shadow-md"
                         />
-                        <h2 className="mt-2 text-xl font-semibold">{article.title}</h2>
+                        <h2 className="mt-2 text-xl font-semibold text-black">{article.title}</h2>
                         <p className="text-gray-600">{article.description}</p>
                     </div>
                 ))}
