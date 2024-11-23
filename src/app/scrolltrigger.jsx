@@ -14,7 +14,7 @@ const ScrollTrigger = () => {
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
         smoothMobile: false,
-        inertia: 0.75,
+        inertia: 10,
       });
 
       // GSAP ScrollTrigger integration
