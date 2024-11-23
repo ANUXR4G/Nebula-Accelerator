@@ -5,9 +5,11 @@ import Whatwedo from "@/app/whatwedo";
 import Team from "@/app/team";
 import NewsForum from "@/app/newsforum";
 import Footer from "@/app/footer";
+import ScrollTrigger from '@/app/scrolltrigger';
 function page() {
   return (
     <div className='bg-white'>
+      <ScrollTrigger/>
       <Navbar/>
       <Heroslider/>
       <Whatwedo/>
