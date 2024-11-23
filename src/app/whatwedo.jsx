@@ -38,12 +38,11 @@ const Whatwedo = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-full md:w-1/2">
-        <h4 className="text-2xl font-bold mb-4 text-blue-800">Details</h4>
+      <div className="w-full md:w-1/2 2xl:translate-y-40">
         <p className="text-gray-700 mb-6 leading-relaxed">{content[activeContent]}</p>
         <a
           href="#"
-          className="text-blue-600 hover:text-blue-800 font-semibold transition duration-300 ease-in-out"
+          className="text-[#f47441] font-semibold transition duration-300 ease-in-out"
         >
           Learn More
         </a>
