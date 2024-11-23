@@ -19,14 +19,14 @@ const Whatwedo = () => {
       {/* Left Section */}
       <div className="w-full md:w-1/2">
         <h2 className="text-9xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
-        <ul className="mt-4 space-y-4 text-gray-100 font-bold cursor-pointer text-6xl">
+        <ul className="text-[#c5e6f4] font-black cursor-pointer text-6xl">
           {Object.keys(content).map((key) => (
             <li
               key={key}
-              className={`transition duration-300 py-5 ease-in-out ${
+              className={`transition duration-300 text-8xl font-black ease-in-out ${
                 activeContent === key 
-                  ? "text-black font-bold" 
-                  : "hover:text-black"
+                  ? "text-[#243f5a] font-black" 
+                  : "text-[#c5e6f4] hover:text-[#243f5a]"
               }`}
               onClick={() => setActiveContent(key)}
             >
