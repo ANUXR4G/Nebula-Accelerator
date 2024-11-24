@@ -43,8 +43,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Button and User Icon */}
       <div className="md:hidden flex items-center space-x-4">
-        <div className="flex items-end justify-end w-10 h-10 bg-gray-200 rounded-full">
-          <FaRegUserCircle className="bg-[#2baee2]" />
+        <div className="flex items-end justify-end w-10 h-10  rounded-full">
+          <FaRegUserCircle className="text-black h-10 w-10" />
         </div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
