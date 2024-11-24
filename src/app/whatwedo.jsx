@@ -18,12 +18,12 @@ const Whatwedo = () => {
     <section className="flex flex-col md:flex-row gap-6 p-6 bg-white font-sans h-screen">
       {/* Left Section */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-9xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
-        <ul className="text-[#c5e6f4] font-black cursor-pointer text-6xl">
+        <h2 className="text-5xl 2xl:text-9xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
+        <ul className="text-[#c5e6f4] font-black cursor-pointer text-4xl 2xl:text-6xl">
           {Object.keys(content).map((key) => (
             <li
               key={key}
-              className={`transition duration-300 text-8xl font-black ease-in-out ${
+              className={`transition duration-300 2xl:text-8xl font-black ease-in-out ${
                 activeContent === key 
                   ? "text-[#243f5a] font-black" 
                   : "text-[#c5e6f4] hover:text-[#243f5a]"
@@ -38,8 +38,8 @@ const Whatwedo = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-full md:w-1/2 2xl:translate-y-40">
-        <p className="text-gray-700 mb-2 text-4xl leading-relaxed">{content[activeContent]}</p>
+      <div className="w-full md:w-1/2 2xl:translate-y-40 text-center lg:text-left items-center">
+        <p className="text-gray-700 mb-2 text-2xl lg:text-4xl leading-relaxed">{content[activeContent]}</p>
         <a
           href="#"
           className="text-[#f47441] text-3xl font-semibold transition duration-300 ease-in-out"

@@ -31,11 +31,11 @@ const Heroslider = () => {
 
   return (
     <div className="p-10">
-      <div className="flex flex-col sm:flex-row items-center justify-center bg-white mb-10">
-        <h1 className="text-black font-black text-center flex-nowrap text-9xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-none tracking-tight">
+      <div className="flex flex-row items-center justify-center bg-white mb-10">
+        <h1 className="text-black font-black text-center flex-nowrap text-2xl  2xl:text-9xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-none tracking-tight">
           ( NEBULA &nbsp; ACCELERATOR )
         </h1>
-        <p className="text-black text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-2 sm:mt-0 sm:ml-4">
+        <p className="text-black text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold ">
           EST.<br/> 2024
         </p>
       </div>
