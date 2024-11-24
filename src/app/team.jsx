@@ -56,7 +56,7 @@ const Team = () => {
         <div className="bg-black text-white py-10 w-full min-h-screen">
             <div className="container mx-auto px-4">
                 <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight mb-8 sm:mb-12">STARS OF THE NEBULA</h1>
-                <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
                     {data.map((member, index) => (
                         <ImageCard
                             key={index}
