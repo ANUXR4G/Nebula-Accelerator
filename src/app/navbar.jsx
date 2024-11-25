@@ -35,8 +35,11 @@ const Navbar = () => {
         <Link href="/news" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
           WORK
         </Link>
-        <Link href="/social" className="hover:text-black transition-colors duration-1000 text-xl text-white bg-[#2baee2]">
+        <Link href="/social" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
           <span className="p-4">MEMBERSHIP</span> 
+        </Link>
+        <Link href="/tedx" className="hover:text-black transition-colors duration-1000 text-xl text-white bg-[#2baee2]">
+          <span className="p-4">TedX</span> 
         </Link>
         <UserIcon />
       </div>
