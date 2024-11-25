@@ -20,14 +20,14 @@ const TedXBharatPage = () => {
       <section className="py-16 px-6 bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-6">About TED</h2>
-          <p className="text-lg leading-relaxed text-gray-300">
+          <p className="text-xl leading-relaxed text-gray-300">
             With the tagline "Ideas Worth Spreading," TED is a nonprofit organization devoted to promoting truly transformative ideas. TED began as a four-day conference in California and currently uses several programs to further its goals. The world's top intellectuals gather at Vancouver's TED Conferences every year to give riveting lectures that tend to be freely accessible on TED.com.
           </p>
           <p className="mt-4 text-lg text-gray-300 leading-relaxed">
             TED's initiatives include the Open Translation Project, TED-Ed, TED Prize, TEDx events, and the TED Fellows program. These programs seek to promote innovation and knowledge sharing in order to inspire global change.
           </p>
           <div className="mt-6">
-            <p className="text-sm text-gray-300">
+            <p className="text-3xl font-bold text-white">
               Follow TED on:
             </p>
             <ul className="mt-2 space-y-2">
@@ -70,10 +70,10 @@ const TedXBharatPage = () => {
       <section className="py-16 px-6 bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-6">About TEDx</h2>
-          <p className="text-lg leading-relaxed text-gray-300">
+          <p className="text-xl leading-relaxed text-gray-300">
             Inspired by TED's objective to convey "ideas worth spreading," TEDx is a global endeavour. These independently organized events foster the dissemination of creative ideas and ground-breaking research while delivering the spirit of TED to local communities across the globe.
           </p>
-          <p className="mt-4 text-lg leading-relaxed text-gray-300">
+          <p className="mt-4 text-xl leading-relaxed text-gray-300">
             TEDx events, which numerous enthusiastic organizers lead, seek to inspire change and meaningful dialogue on a local level. With both live speakers and recorded TED Talks, each event follows strict curation, speaker coaching, and event planning. These individually organised TED events are independently functioning under a TED license. (Subject to rules and regulations)
           </p>
         </div>
@@ -83,10 +83,10 @@ const TedXBharatPage = () => {
       <section className="py-16 px-6 bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-6">About TEDx Bharat</h2>
-          <p className="text-lg leading-relaxed text-gray-300">
+          <p className="text-xl leading-relaxed text-gray-300">
             TEDx Bharat brings the spirit of TED to India, focusing on the defence sector to highlight themes of innovation, national security, and technological advancement. Our esteemed speakers include veterans, policymakers, and tech innovators who explore the role of startups and citizens in shaping India's defence ecosystem.
           </p>
-          <p className="mt-4 text-lg leading-relaxed text-gray-300">
+          <p className="mt-4 text-xl leading-relaxed text-gray-300">
             A core mission of TEDx Bharat is to support women entrepreneurs, encouraging their participation and leadership in defence-related startups. From discussions on AI and cybersecurity to showcasing the impact of indigenous manufacturing and defence startups, TEDx Bharat aims to inspire and mobilize the nation towards a secure, self-reliant future.
           </p>
         </div>
@@ -96,10 +96,10 @@ const TedXBharatPage = () => {
       <section className="py-16 px-6 bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-6">What to Expect?</h2>
-          <p className="text-lg leading-relaxed text-gray-300">
+          <p className="text-xl leading-relaxed text-gray-300">
             TEDx Bharat will be offering an enriching experience that focuses on innovation and technological advancements in the defence sector. Attendees will enjoy thought-provoking talks from esteemed veterans, defence researchers, and entrepreneurs.
           </p>
-          <p className="mt-4 text-lg leading-relaxed text-gray-300">
+          <p className="mt-4 text-xl leading-relaxed text-gray-300">
             Through engaging discussions on AI, cybersecurity, and encouraging women entrepreneurship, TEDx Bharat inspires a collective effort towards a secure, self-reliant future. Join us to celebrate the diverse and resilient contributions that define Bharat’s defence landscape!
           </p>
         </div>
