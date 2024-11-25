@@ -17,9 +17,11 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between lg:px-6 py-4 bg-white shadow-md md:px-12 p-2">
       {/* Logo */}
+      <Link href="/">
       <div className="flex items-center flex-grow md:flex-none">
         <Image src={logo} alt="Nebula Logo" width={200} height={100} />
       </div>
+      </Link>
 
       {/* Links for larger screens */}
       <div className="hidden md:flex space-x-8 text-lg font-semibold flex-grow justify-evenly items-center">
