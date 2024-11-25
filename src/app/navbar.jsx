@@ -23,7 +23,7 @@ const Navbar = () => {
 
       {/* Links for larger screens */}
       <div className="hidden md:flex space-x-8 text-lg font-semibold flex-grow justify-evenly items-center">
-        <Link href="/about" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
+        <Link href="/" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
           HOME
         </Link>
         <Link href="/about" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
