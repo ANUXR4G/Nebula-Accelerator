@@ -19,7 +19,7 @@ const TedXBharatPage = () => {
       {/* About TED */}
       <section className="py-16 px-6 bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-6">About TED</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">About TEDx</h2>
           <p className="text-xl leading-relaxed text-gray-300">
             With the tagline "Ideas Worth Spreading," TED is a nonprofit organization devoted to promoting truly transformative ideas. TED began as a four-day conference in California and currently uses several programs to further its goals. The world's top intellectuals gather at Vancouver's TED Conferences every year to give riveting lectures that tend to be freely accessible on TED.com.
           </p>
@@ -28,7 +28,7 @@ const TedXBharatPage = () => {
           </p>
           <div className="mt-6">
             <p className="text-3xl font-bold text-white">
-              Follow TED on:
+              Follow TEDx on:
             </p>
             <ul className="mt-2 space-y-2">
               <li>
