@@ -36,7 +36,7 @@ const TedXBharatPage = () => {
                   href="http://twitter.com/TEDTalks"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
+                  className="text-[#43aee2] hover:underline"
                 >
                   Twitter - http://twitter.com/TEDTalks
                 </a>
@@ -46,7 +46,7 @@ const TedXBharatPage = () => {
                   href="https://www.facebook.com/TED/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
+                  className="text-[#43aee2] hover:underline"
                 >
                   Facebook - https://www.facebook.com/TED/
                 </a>
@@ -56,7 +56,7 @@ const TedXBharatPage = () => {
                   href="https://www.ted.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
+                  className="text-[#43aee2] hover:underline"
                 >
                   Official website - https://www.ted.com/
                 </a>
