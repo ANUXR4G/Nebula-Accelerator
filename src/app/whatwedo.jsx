@@ -10,8 +10,7 @@ const Whatwedo = () => {
     "pre-incubation": "Pre-incubation programs provide early support for idea validation and concept development.",
     incubation: "Incubation focuses on helping startups build their products and grow sustainably.",
     accelerator: "Accelerators offer fast-tracked support to scale businesses rapidly.",
-    "blockchain & ai cohort": "Specialized programs in Blockchain and AI for developing cutting-edge solutions.",
-    "pilot projects": "Pilot projects enable testing and validation of concepts in real-world scenarios.",
+    "AIF": "Specialized programs in Blockchain and AI for developing cutting-edge solutions.",
   };
 
   return (
