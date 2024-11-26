@@ -31,11 +31,11 @@ const Heroslider = () => {
 
   return (
     <div className="p-8">
-      <div className="flex flex-row items-center justify-center bg-white text-nowrap mb-2">
-        <h1 className="text-black font-black text-center text-2xl 2xl:text-9xl sm:text-6xl md:text-5xl xl:text-8xl leading-none tracking-tight">
+      <div className="flex flex-col sm:flex-row items-center justify-center bg-white text-nowrap mb-2">
+        <h1 className="text-black font-black text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl leading-none tracking-tight">
           ( NEBULA &nbsp; ACCELERATOR )
         </h1>
-        <p className="text-black text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold ">
+        <p className="text-black text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-2 sm:mt-0 sm:ml-4">
           EST.<br/> 2024
         </p>
       </div>
@@ -55,8 +55,8 @@ const Heroslider = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <div className="text-white text-center p-6">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-2">{slide.title}</h2>
-                  <p className="text-lg md:text-xl">{slide.description}</p>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">{slide.title}</h2>
+                  <p className="text-base sm:text-lg md:text-xl">{slide.description}</p>
                 </div>
               </div>
             </div>
@@ -64,13 +64,13 @@ const Heroslider = () => {
         </div>
 
         <button
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full text-3xl z-10 hover:bg-opacity-75"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full text-2xl sm:text-3xl z-10 hover:bg-opacity-75"
           onClick={goToPrevious}
         >
           &#10094;
         </button>
         <button
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full text-3xl z-10 hover:bg-opacity-75"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full text-2xl sm:text-3xl z-10 hover:bg-opacity-75"
           onClick={goToNext}
         >
           &#10095;
