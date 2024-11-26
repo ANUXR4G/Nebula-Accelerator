@@ -1,12 +1,24 @@
 "use client"
 import React from "react";
+import { Typewriter } from 'react-simple-typewriter';
 
 const Heroslider = () => {
   return (
     <div className="p-8">
       <div className="flex flex-col sm:flex-row items-center justify-center bg-white text-nowrap mb-2">
         <h1 className="text-black font-black text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl leading-none tracking-tight">
-          NEBULA ACCELERATOR
+          NEBULA{' '}
+          <span className="text-black">
+            <Typewriter
+              words={['VENTURE', 'INCUBATOR', 'ACCELERATOR']}
+              loop={0}
+              cursor
+              cursorStyle='_'
+              typeSpeed={100}
+              deleteSpeed={100}
+              delaySpeed={2000}
+            />
+          </span>
         </h1>
         <p className="text-black text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-2 sm:mt-0 sm:ml-4">
           &nbsp;EST.<br /> 2021
