@@ -70,7 +70,7 @@ const Navbar = () => {
       >
         <ul className="flex flex-col space-y-4 py-4 px-6 text-lg font-semibold text-left">
           <li>
-            <Link href="/about" className="block hover:underline text-black py-10 text-2xl">
+            <Link href="/" className="block hover:underline text-black py-10 text-2xl">
               HOME
             </Link>
           </li>
