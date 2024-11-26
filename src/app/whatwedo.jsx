@@ -15,11 +15,11 @@ const Whatwedo = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row gap-6 p-6 bg-white font-sans h-screen transition-transform duration-1000 ease-in-out">
+    <section className="flex flex-col md:flex-row gap-6 p-6 bg-white font-sans min-h-screen transition-transform duration-1000 ease-in-out">
       {/* Left Section */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-5xl xl:text-8xl  2xl:text-9xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
-        <ul className="text-[#c5e6f4] font-black cursor-pointer text-4xl md:text-6xl xl:text-7xl 2xl:text-6xl">
+        <h2 className="text-4xl md:text-5xl xl:text-8xl 2xl:text-9xl mb-4 text-gray-800 font-black tracking-wide">WHAT WE DO</h2>
+        <ul className="text-[#c5e6f4] font-black cursor-pointer text-2xl md:text-3xl xl:text-6xl 2xl:text-7xl">
           {Object.keys(content).map((key) => (
             <li
               key={key}
@@ -34,15 +34,14 @@ const Whatwedo = () => {
             </li>
           ))}
         </ul>
-        
       </div>
 
       {/* Right Section */}
       <div className="w-full md:w-1/2 md:translate-y-20 xl:translate-y-40 text-center lg:text-left items-center transition-transform duration-1000 ease-in-out">
-        <p className="text-gray-700 mb-2 text-2xl lg:text-4xl leading-relaxed">{content[activeContent]}</p>
+        <p className="text-gray-700 mb-2 text-lg md:text-2xl lg:text-4xl leading-relaxed">{content[activeContent]}</p>
         <a
           href="#"
-          className="text-[#f47441] text-3xl font-semibold transition duration-300 ease-in-out"
+          className="text-[#f47441] text-xl md:text-2xl lg:text-3xl font-semibold transition duration-300 ease-in-out"
         >
           Learn More
         </a>
@@ -50,7 +49,7 @@ const Whatwedo = () => {
           <img
             src="https://via.placeholder.com/300"
             alt="Team working"
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md w-full max-w-xs md:max-w-sm lg:max-w-md"
           />
         </div>
       </div>
