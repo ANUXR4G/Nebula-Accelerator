@@ -36,7 +36,7 @@ const Heroslider = () => {
           ( NEBULA &nbsp; ACCELERATOR )
         </h1>
         <p className="text-black text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-2 sm:mt-0 sm:ml-4">
-          EST.<br/> 2024
+          EST.<br/> 2021
         </p>
       </div>
       <div className="relative w-full h-[calc(100vh-12rem)] overflow-hidden">
