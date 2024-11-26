@@ -95,7 +95,7 @@ const TedXBharatPage = () => {
       {/* What to Expect */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-black mb-6 flex">What to <span className="text-red-500">Expect?</span></h2>
+          <h2 className="text-3xl font-bold text-black mb-6 flex">What To <p className="text-red-500">Expect?</p></h2>
           <p className="text-xl leading-relaxed text-gray-800">
             TEDx Bharat will be offering an enriching experience that focuses on innovation and technological advancements in the defence sector. Attendees will enjoy thought-provoking talks from esteemed veterans, defence researchers, and entrepreneurs.
           </p>

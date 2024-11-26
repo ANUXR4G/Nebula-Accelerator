@@ -7,7 +7,6 @@ function page() {
     <div>
       <Navbar/>
       <Tedx/>
-      <hr/>
       <Footer/>
     </div>
   )
