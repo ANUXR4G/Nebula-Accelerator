@@ -27,6 +27,31 @@ const NewsForum = () => {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             image: "https://via.placeholder.com/300x200",
         },
+        {
+            title: "Article 6",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: "https://via.placeholder.com/300x200",
+        },
+        {
+            title: "Article 7",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: "https://via.placeholder.com/300x200",
+        },
+        {
+            title: "Article 8",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: "https://via.placeholder.com/300x200",
+        },
+        {
+            title: "Article 9",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: "https://via.placeholder.com/300x200",
+        },
+        {
+            title: "Article 10",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: "https://via.placeholder.com/300x200",
+        },
     ];
 
     return (
