@@ -12,8 +12,8 @@ const Page = () => {
       {/* Header Section */}
       <header className="px-6 md:px-16 py-10 bg-gray-200">
         <h1 className="text-4xl md:text-6xl font-bold uppercase">We Are Nebula</h1>
-        <div className="mt-6 bg-gray-300 h-40 md:h-2/3 w-full">{/* Spline Component */}
-          <Spline scene="https://prod.spline.design/l5g4dueiacbS19rO/scene.splinecode" />
+        <div className="mt-6 bg-gray-300 h-40 md:h-1/2 ">{/* Spline Component */}
+          <Spline scene="https://prod.spline.design/hQZks9rWcd2WaRGS/scene.splinecode" />
           {/* Text Content */}</div>
        
       </header>
