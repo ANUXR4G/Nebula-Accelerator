@@ -22,7 +22,7 @@ const Whatwedo = () => {
           {Object.keys(content).map((key) => (
             <li
               key={key}
-              className={`transition duration-300 2xl:text-7xl font-black ease-in-out md:mt-6 ${
+              className={`transition duration-300 text-[80px] 2xl:text-7xl font-black ease-in-out md:mt-14 ${
                 activeContent === key 
                   ? "text-[#243f5a] font-black" 
                   : "text-[#c5e6f4] hover:text-[#243f5a]"

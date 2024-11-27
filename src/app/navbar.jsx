@@ -41,7 +41,7 @@ const Navbar = () => {
           <span className="p-4">MEMBERSHIP</span> 
         </Link>
         <Link href="/tedx" className="hover:text-black transition-colors duration-1000 text-xl text-white bg-[#2baee2]">
-          <span className="p-4">TEDx</span> 
+          <span className="p-10 ">TEDx</span> 
         </Link>
         <UserIcon />
       </div>

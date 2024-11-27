@@ -16,7 +16,7 @@ const Heroslider = () => {
               cursorStyle='_'
               typeSpeed={100}
               deleteSpeed={100}
-              delaySpeed={1000}
+              delaySpeed={2000}
             />
           </span>
         </h1>
