@@ -31,10 +31,10 @@ const Navbar = () => {
         <Link href="/about" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
           ABOUT
         </Link>
-        <Link href="/team" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
+        <Link href="/service" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
           SERVICES
         </Link>
-        <Link href="/news" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
+        <Link href="/work" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
           WORK
         </Link>
         <Link href="/social" className="hover:text-gray-400 transition-colors duration-1000 text-xl text-black">
@@ -75,17 +75,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/team" className="block hover:underline text-black py-10 text-2xl">
+            <Link href="/about" className="block hover:underline text-black py-10 text-2xl">
               ABOUT
             </Link>
           </li>
           <li>
-            <Link href="/news" className="block hover:underline text-black py-10 text-2xl">
+            <Link href="/service" className="block hover:underline text-black py-10 text-2xl">
               SERVICES
             </Link>
           </li>
           <li>
-            <Link href="/portfolio" className="block hover:underline text-black py-10 text-2xl">
+            <Link href="/work" className="block hover:underline text-black py-10 text-2xl">
               WORK
             </Link>
           </li>
